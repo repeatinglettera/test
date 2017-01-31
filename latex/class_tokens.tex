@@ -1,0 +1,40 @@
+\hypertarget{class_tokens}{}\section{Tokens Class Reference}
+\label{class_tokens}\index{Tokens@{Tokens}}
+
+
+Class to divide up a String into individual tokens based on a character delimiter.  
+
+
+
+
+{\ttfamily \#include $<$Tokens.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tokens_a326b0694ea391f608f9cc71fe236c3bc}\label{class_tokens_a326b0694ea391f608f9cc71fe236c3bc}} 
+\hyperlink{class_tokens_a326b0694ea391f608f9cc71fe236c3bc}{Tokens} (String $\ast$str, char delimiter)
+\begin{DoxyCompactList}\small\item\em The constructor that accepts the String used to generate tokens and the character delimiter to determine the tokens (the passed in String is unaffected). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tokens_acd11b5f66d858705695a122151ba1f0d}\label{class_tokens_acd11b5f66d858705695a122151ba1f0d}} 
+\hyperlink{class_tokens_acd11b5f66d858705695a122151ba1f0d}{$\sim$\+Tokens} ()
+\begin{DoxyCompactList}\small\item\em The destructor which does not delete the individual tokens. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tokens_aad54aaf40815db1e85811b58d02b2531}\label{class_tokens_aad54aaf40815db1e85811b58d02b2531}} 
+void \hyperlink{class_tokens_aad54aaf40815db1e85811b58d02b2531}{display\+Tokens} ()
+\begin{DoxyCompactList}\small\item\em Display all of the tokens generated from the String and character delimiter passed to the constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tokens_ab7afcc723baf9f48a9150a2f2d8bb2e5}\label{class_tokens_ab7afcc723baf9f48a9150a2f2d8bb2e5}} 
+String $\ast$ \hyperlink{class_tokens_ab7afcc723baf9f48a9150a2f2d8bb2e5}{get\+Token} (int index)
+\begin{DoxyCompactList}\small\item\em Return a specific token whose index is determined by the token location in the original String (0-\/based). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tokens_aa34f5363d72f5c761f7b9f9164067efe}\label{class_tokens_aa34f5363d72f5c761f7b9f9164067efe}} 
+int \hyperlink{class_tokens_aa34f5363d72f5c761f7b9f9164067efe}{get\+Num\+Tokens} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of tokens generated given the parameters passed to the constructor ($>$= 1). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to divide up a String into individual tokens based on a character delimiter. 
+
+The \hyperlink{class_tokens}{Tokens} class accepts a String and a character (the delimiter) through the constructor. Several Strings (tokens) are created based on the appearance of the delimiter in the original String. The delimiter itself is not part of the tokens. The resulting tokens can be obtained by index according to their location in the original String. The original String is unaffected. Note that the destructor does {\bfseries not} delete the individual tokens. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tokens.\+h\item 
+Tokens.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\hypertarget{class_read_file}{}\section{Read\+File Class Reference}
+\label{class_read_file}\index{Read\+File@{Read\+File}}
+
+
+Class that recieves a filename and reads the file.  
+
+
+
+
+{\ttfamily \#include $<$Read\+File.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_read_file_ac7f5f0f0326869fcf504f84047c530a2}\label{class_read_file_ac7f5f0f0326869fcf504f84047c530a2}} 
+\hyperlink{class_read_file_ac7f5f0f0326869fcf504f84047c530a2}{Read\+File} (const char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em The constructor accepts a filename and opens that file. Sets the closed and the \+\_\+eof bools equal to false. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_read_file_a6907d1c4540eda101bfef2ba2b87af4b}\label{class_read_file_a6907d1c4540eda101bfef2ba2b87af4b}} 
+\hyperlink{class_read_file_a6907d1c4540eda101bfef2ba2b87af4b}{$\sim$\+Read\+File} ()
+\begin{DoxyCompactList}\small\item\em The destructor makes sure the file is closed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_read_file_a49e3c08677b370a59ad8a1925ce01829}\label{class_read_file_a49e3c08677b370a59ad8a1925ce01829}} 
+String $\ast$ \hyperlink{class_read_file_a49e3c08677b370a59ad8a1925ce01829}{read\+Line} ()
+\begin{DoxyCompactList}\small\item\em Returns a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_read_file_a04a448646a2125106a323f64fa4e8410}\label{class_read_file_a04a448646a2125106a323f64fa4e8410}} 
+bool \hyperlink{class_read_file_a04a448646a2125106a323f64fa4e8410}{eof} ()
+\begin{DoxyCompactList}\small\item\em Returns \+\_\+eof. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_read_file_a8450f314db3d210600b17987da635188}\label{class_read_file_a8450f314db3d210600b17987da635188}} 
+void \hyperlink{class_read_file_a8450f314db3d210600b17987da635188}{close} ()
+\begin{DoxyCompactList}\small\item\em Closes the input file and sets the bool closed equal to true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that recieves a filename and reads the file. 
+
+Recieves an input file through ifstream. Constructor takes in a filename as a parameter. Destructor makes sure that the file is closed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Read\+File.\+h\item 
+Read\+File.\+cpp\end{DoxyCompactItemize}

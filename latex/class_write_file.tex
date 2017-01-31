@@ -1,0 +1,37 @@
+\hypertarget{class_write_file}{}\section{Write\+File Class Reference}
+\label{class_write_file}\index{Write\+File@{Write\+File}}
+
+
+Class that recieves a filename and writes the file.  
+
+
+
+
+{\ttfamily \#include $<$Write\+File.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_write_file_a6fe0f0b0459e0fc683cc77bdee42cc91}\label{class_write_file_a6fe0f0b0459e0fc683cc77bdee42cc91}} 
+\hyperlink{class_write_file_a6fe0f0b0459e0fc683cc77bdee42cc91}{Write\+File} (const char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em The constructor accepts a file name and opens that file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_write_file_a52842cff5805157d22d0cf39da3200f9}\label{class_write_file_a52842cff5805157d22d0cf39da3200f9}} 
+\hyperlink{class_write_file_a52842cff5805157d22d0cf39da3200f9}{$\sim$\+Write\+File} ()
+\begin{DoxyCompactList}\small\item\em The destructor makes sure the file is closed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_write_file_a370c9e4e3a1e966a905a5265d9b72a17}\label{class_write_file_a370c9e4e3a1e966a905a5265d9b72a17}} 
+void \hyperlink{class_write_file_a370c9e4e3a1e966a905a5265d9b72a17}{write\+Line} (String $\ast$line)
+\begin{DoxyCompactList}\small\item\em Takes in lines and writes them to the output file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_write_file_afc6de286ab53e3dd73812efdbc3696ff}\label{class_write_file_afc6de286ab53e3dd73812efdbc3696ff}} 
+void \hyperlink{class_write_file_afc6de286ab53e3dd73812efdbc3696ff}{close} ()
+\begin{DoxyCompactList}\small\item\em If the file is not closed, it closes the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that recieves a filename and writes the file. 
+
+Constructor takes in a filename as a parameter. Destructor makes sure that the file is closed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Write\+File.\+h\item 
+Write\+File.\+cpp\end{DoxyCompactItemize}
