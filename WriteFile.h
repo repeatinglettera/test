@@ -8,10 +8,10 @@ using namespace std;
 
 class WriteFile
 {
-	public:
+	private:
 		ofstream output_file;
 		bool closed;
-	private:
+	public:
 		WriteFile(const char* file_name);
 		~WriteFile();
 		void writeLine(String* line);
